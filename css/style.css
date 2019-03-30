@@ -24,6 +24,46 @@
     color: #fff;
 }
 
+.span {
+    border: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #571845;
+    display: inline-block;
+    margin: 6px;
+    color: #571845;
+    animation-name: animate;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transform: scale(1);
+    transition: .3s all;
+}
+
+.span:nth-of-type(1) {
+    animation-delay: .4s;
+}
+
+.span:nth-of-type(2) {
+    animation-delay: .8s;
+}
+
+.span:nth-of-type(3) {
+    animation-delay: 1.2s;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+        transition: .3s all;
+    }
+}
+
 
 
 
